@@ -24,6 +24,15 @@ to add them to the applications config file.
 
 The config file will be places in `$home/.easee-cli/config.yaml`
 
+If you have problems finding your Charger's Id, then run
+
+```
+easee-cli config getchargerid
+```
+
+To get the id of your charger.
+Note we currently only support one charger.
+
 ### Prerequisites
 
 To be able to run any commands, you must have a valid token.
