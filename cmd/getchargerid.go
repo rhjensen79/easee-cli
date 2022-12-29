@@ -5,7 +5,7 @@ package cmd
 
 import (
 	"encoding/json"
-	"io/ioutil"
+	"io"
 	"log"
 	"net/http"
 	"strings"
@@ -50,7 +50,7 @@ func GetChargerId(accesstoken string) (chargerid string) {
 	}
 
 	defer res.Body.Close()
-	body, _ := ioutil.ReadAll(res.Body)
+	body, _ := io.ReadAll(res.Body)
 
 	st := string(body)
 	st = strings.Trim(st, "[]")
