@@ -1,3 +1,5 @@
+![Easee Image](https://d2csxpduxe849s.cloudfront.net/media/A2D1552F-F177-4B01-9E863028C1D46C3F/71D770BF-9E4D-4579-8C70BD1E4DDEC6DC/webimage-577038BF-2EB9-43FA-B2921FF789B05FAA.png)
+
 # Easee-CLI
 
 ## Table of Contents
