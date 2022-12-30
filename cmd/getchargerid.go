@@ -1,5 +1,5 @@
 /*
-Copyright © 2022 NAME HERE <EMAIL ADDRESS>
+Copyright © 2022 Robert Jensen https://github.com/rhjensen79
 */
 package cmd
 
@@ -19,6 +19,7 @@ var getchargeridCmd = &cobra.Command{
 	Use:   "getchargerid",
 	Short: "Get ChargerID of your charger",
 	Long:  `Get ChargerID of your charger`,
+
 	Run: func(cmd *cobra.Command, args []string) {
 		viper.Set("chargerid", GetChargerId(viper.GetString("token")))
 	},

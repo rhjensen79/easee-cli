@@ -22,7 +22,7 @@ var pauseCmd = &cobra.Command{
 }
 
 func init() {
-	rootCmd.AddCommand(pauseCmd)
+	chargerCmd.AddCommand(pauseCmd)
 
 }
 

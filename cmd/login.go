@@ -19,6 +19,7 @@ var loginCmd = &cobra.Command{
 	Short: "Get a token valid for 24 hours",
 	Long: `Use login, to get a new token, valid for 24 hours.
 The token will be saves in the config file, and used for all api calls`,
+
 	Run: func(cmd *cobra.Command, args []string) {
 		viper.Set("token", Auth(viper.GetString("username"), viper.GetString("password")))
 		viper.WriteConfig()
